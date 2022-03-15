@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vess <marvin@42.fr>                        +#+  +:+       +#+        */
+/*   By: vess <vess@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 10:26:31 by vess              #+#    #+#             */
-/*   Updated: 2022/01/06 11:52:01 by vess             ###   ########.fr       */
+/*   Updated: 2022/03/10 19:07:48 by vess             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -173,6 +173,7 @@ int main ()
 	int nb = 42;
 	int max = 2147483647;
 	int min = -2147483648;
+	int c = 0;
 	
 	ft_printf("%c\n", a);
 	ft_printf("LOOOOOOOOOOOOL\n");
@@ -182,6 +183,8 @@ int main ()
 	ft_printf("%d\n", max);
 	ft_printf("%d\n", min);
 	ft_printf("%x\n", nb);
+	printf("%d\n", ft_printf("%d\n", c));
+	printf("%d\n", printf("%x\n", c));
 
 	return (0);
 }
